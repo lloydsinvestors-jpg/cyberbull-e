@@ -1,0 +1,88 @@
+# NPC reactions (played on Schedule I's NPCs through a hidden Bully skeleton + Retarget)
+npc_gag MINI_React.agr 8
+npc_itch MINI_React.agr 11
+npc_egged MINI_React.agr 9
+npc_startle MINI_React.agr 2
+npc_ow MINI_React.agr 6
+npc_wedgied SHUMIL_01.agr 1
+# Bully skateboarding (Skateboard.agr, played full body incl. the Root stance rotation)
+sk_ride Skateboard.agr 1
+sk_push Skateboard.agr 8
+sk_ollie Skateboard.agr 6
+sk_crouch Skateboard.agr 11
+sk_bail Skateboard.agr 34
+# Bully bike + moped (V_Bike.agr / V_SCOOTER.agr), picked from tools/ride_sheet.py renders ON the bike (lifted onto its wheels): #1 seated pedal cycle, #3 standing sprint, #0 stopped foot-down, #12 hop, #18 get on, #20 get off
+bike_pedal V_Bike.agr 1 loop
+bike_sprint V_Bike.agr 3 loop
+bike_stop V_Bike.agr 0
+bike_hop V_Bike.agr 12
+bike_on V_Bike.agr 18
+bike_off V_Bike.agr 20
+moped_ride V_SCOOTER.agr 5
+moped_stop V_SCOOTER.agr 6
+moped_on V_SCOOTER.agr 4
+# Bully's full bike moveset (v0.13, picked from tools/strip_sheet.py time strips ON the bike; the bike's own animation
+# table BIKE.HXD names: CROUCH / HOPCHARGE, FRONTMANUAL, BACKMANUAL, PUNCH_L/R, JAB_L/R, tricks, WALKBACK, STDTURN_L/R)
+bike_crouch V_Bike.agr 2 loop
+bike_coast V_Bike.agr 46 loop
+bike_hop_high V_Bike.agr 13
+bike_land V_Bike.agr 17
+bike_punch_l V_Bike.agr 5
+bike_punch_r V_Bike.agr 6
+bike_jab_l V_Bike.agr 10
+bike_jab_r V_Bike.agr 11
+bike_fmanual V_Bike.agr 24 loop
+bike_bmanual V_Bike.agr 69 loop
+bike_trick1 V_Bike.agr 58
+bike_trick2 V_Bike.agr 60
+bike_trick3 V_Bike.agr 61
+bike_throw V_Bike.agr 28
+bike_sling V_Bike.agr 29
+bike_leap V_Bike.agr 38
+bike_walkback V_Bike.agr 8 loop
+bike_stdturn_l V_Bike.agr 72
+bike_stdturn_r V_Bike.agr 73
+bike_crash_front V_Bike.agr 25
+bike_crash_back V_Bike.agr 40
+bike_crash_side V_Bike.agr 80
+# Bully's go-kart (Go_Cart.agr; strip_sheet.py ON GoCart): #0 climb in, #2 climb out, #4 seated hold, #5/#6 steer, #11/#12 hard lean, #13 fist pump, #16 thrown out
+kart_on Go_Cart.agr 0
+kart_off Go_Cart.agr 2
+kart_idle Go_Cart.agr 4 loop
+kart_left Go_Cart.agr 5
+kart_right Go_Cart.agr 6
+kart_hard_l Go_Cart.agr 11
+kart_hard_r Go_Cart.agr 12
+kart_cheer Go_Cart.agr 13
+kart_crash Go_Cart.agr 16
+# the carnie behind the shop counter (carnies.agr on Carni01): #1 standing idle, #6 "step right up" arms out, #8 talking a sale, #2 beckon
+carnie_idle carnies.agr 1 loop
+carnie_attract carnies.agr 6
+carnie_talk carnies.agr 8
+carnie_beckon carnies.agr 2
+# v0.15 cast bodies + Bully fist fighting (Austin: "map their movements and passibe behavior after the bully ... implement
+# the fighting machanics from bully"). C_Player.agr = Bully's shared ped set; picked from tools/clip_stats.py (root speed,
+# loops) + anim_sheet.py sheets (assets/anims/cp_loco.png, cp_idle.png, cp_short_*.png, fg_loco.png)
+npc_idle C_Player.agr 12 loop
+npc_idle2 C_Player.agr 29 loop
+npc_walk C_Player.agr 30 loop
+npc_walkfast C_Player.agr 26 loop
+npc_run C_Player.agr 0 loop
+npcf_idle F_Girls.agr 2 loop
+npcf_walk F_Girls.agr 0 loop
+npcf_run F_Girls.agr 12 loop
+fist_stance C_Player.agr 229 loop
+fist_jab C_Player.agr 278
+fist_cross C_Player.agr 279
+fist_hook C_Player.agr 277
+fist_kick C_Player.agr 176
+fist_haymaker C_Player.agr 137
+fist_block C_Player.agr 109
+hit_light C_Player.agr 191
+hit_head C_Player.agr 19
+hit_gut C_Player.agr 286
+hit_stagger C_Player.agr 34
+hit_down C_Player.agr 188
+hit_down2 C_Player.agr 337
+hit_getup C_Player.agr 89
+npc_cower C_Player.agr 183

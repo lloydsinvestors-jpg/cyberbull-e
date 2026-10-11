@@ -1,0 +1,9 @@
+bin/
+obj/
+local.props
+release/machine_strings.txt
+release/_build/
+release/CyberBull-E-*/
+release/*.zip
+tools/dist/
+__pycache__/
